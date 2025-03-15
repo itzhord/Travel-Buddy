@@ -13,16 +13,19 @@
     }
 </script>
 
+ 
+<div class="w-[25vw] bg-white shadow-lg mx-auto">
 
-<Tabs.Root value="account" class="w-[400px]">
-    <Tabs.List>
+
+<Tabs.Root value="account" class="">
+    <Tabs.List class=" mt-[3rem] mx-[1.7rem]">
       <Tabs.Trigger value="sign">Sign Up</Tabs.Trigger>
       <Tabs.Trigger value="login">Login</Tabs.Trigger>
     </Tabs.List>
     <Tabs.Content value="sign">
         <main class="flex-grow flex items-center justify-center  p-4">
             <!-- Sign-Up Form -->
-            <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md md:max-w-md">
+            <div class="bg-white p-6 rounded-lg w-full max-w-md md:max-w-md">
               <!-- Tabs -->
               <div class="flex border-b">
                 <button class="flex-1 py-2 text-center bg-orange-400 text-white">Sign Up</button>
@@ -81,14 +84,8 @@
     <Tabs.Content value="login">
         <main class="flex-grow flex items-center justify-center p-4">
             <!-- Sign-Up Form -->
-            <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md md:max-w-md">
-              <!-- Tabs -->
-              <div class="flex border-b">
-                <a href="/login" class="flex-1 py-2 text-center text-gray-600 bg-gray-200">Log In</a>
-              </div>
-        
-        
-        
+            <div class="bg-white p-6 rounded-lg w-full max-w-md md:max-w-md">
+                
               <!-- Manual Sign-Up Form -->
               <form on:submit|preventDefault={handleSignUp} class="space-y-4">
                 <div class="flex space-x-4">
@@ -111,6 +108,11 @@
                   bind:value={email}
                   class="w-full p-2 border rounded-lg"
                 />
+                <input
+                  type="password"
+                  placeholder="Password"
+                  class="w-full p-2 border rounded-lg"
+                />
                 <button type="submit" class="w-full py-2 bg-orange-200 text-white rounded-lg hover:bg-orange-300">
                   Continue
                 </button>
@@ -125,3 +127,4 @@
     </Tabs.Content>
   </Tabs.Root>
  <!-- Main Content -->
+</div>
