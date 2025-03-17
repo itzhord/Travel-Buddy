@@ -3,3 +3,6 @@
 
     let { data }: { data: PageData } = $props();
 </script>
+<div>
+    <p>Food</p>
+</div>

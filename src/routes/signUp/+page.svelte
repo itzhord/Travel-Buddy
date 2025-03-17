@@ -78,26 +78,26 @@
         <div class="my-4 text-center text-gray-500">OR</div>
   
         <!-- Manual Sign-Up Form -->
-        <form on:submit|preventDefault={handleSignUp} class="space-y-4">
+        <form on:submit|preventDefault={handleSignUp} class="space-y-4 ">
           <div class="flex space-x-4">
             <input
               type="text"
               placeholder="First name"
               bind:value={firstName}
-              class="w-full p-2 border rounded-lg"
+              class="w-full p-2 border rounded-lg focus:outline-none"
             />
             <input
               type="text"
               placeholder="Last name"
               bind:value={lastName}
-              class="w-full p-2 border rounded-lg"
+              class="w-full p-2 border rounded-lg focus:outline-none"
             />
           </div>
           <input
             type="email"
             placeholder="Email address"
             bind:value={email}
-            class="w-full p-2 border rounded-lg"
+            class="w-full p-2 border rounded-lg focus:outline-none"
           />
           <button type="submit" class="w-full py-2 bg-orange-200 text-white rounded-lg hover:bg-orange-300">
             Continue

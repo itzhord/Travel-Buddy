@@ -46,7 +46,6 @@
     // Handle form submission with minimum interest validation
     function handleSubmit() {
       if (interests.length < 3) {
-        alert('Please select at least 3 interests before proceeding!');
         return;
       }
 
