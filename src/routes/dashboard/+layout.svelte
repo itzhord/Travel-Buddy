@@ -7,7 +7,7 @@
     let { data, children }: { data: LayoutData, children: Snippet } = $props();
 </script>
  
-<Sidebar.Provider>
+<Sidebar.Provider class="font-manrope">
     <AppSidebar />
     <main>
       <Sidebar.Trigger />
