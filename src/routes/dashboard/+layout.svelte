@@ -10,7 +10,7 @@
 <Sidebar.Provider class="font-manrope">
     <AppSidebar />
     <main>
-      <Sidebar.Trigger />
+      <Sidebar.Trigger class='hidden md:block' />
     </main>
 {@render children()}
 
