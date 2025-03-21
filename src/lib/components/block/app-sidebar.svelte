@@ -12,12 +12,12 @@
     const items = [
      {
       title: "Home",
-      url: "#",
+      url: "dashboard",
       icon: House,
      },
      {
       title: "Message",
-      url: "#",
+      url: "dashboard/message",
       icon: Inbox,
      },
      {
@@ -67,20 +67,7 @@
           </Sidebar.MenuButton>
          </Sidebar.MenuItem>
         {/each}
-        <div class="mt-[4rem] border w-[12rem] mx-auto rounded-xl border-gray-200">
-        {#each locations as location (location.title)}
-        <Sidebar.MenuItem>
-         <Sidebar.MenuButton>
-          {#snippet child({ props })}
-           <a href={location.url} {...props} class="text-[1rem] flex my-3 items-center space-x-4 ml-2"> 
-            <location.icon/>
-            <p class="flex flex-col text-left text-gray-500" >{location.title}<span class=" text-[1.3rem] text-gray-700">{location.location}</span></p>
-        </a>
-        {/snippet}
-         </Sidebar.MenuButton>
-        </Sidebar.MenuItem>
-       {/each}
-        </div>
+        
        </Sidebar.Menu>
       </Sidebar.GroupContent>
      </Sidebar.Group>

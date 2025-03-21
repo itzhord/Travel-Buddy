@@ -70,7 +70,7 @@
 {#if menuOpen}
     <div class="bg-gray-100 p-3 shadow-md absolute top-14 left-0 w-full z-10">
         <nav class="flex flex-col space-y-2">
-            <a href="#" class="text-gray-800 hover:text-orange-500"> Home</a>
+            <a href="/dashboard" class="text-gray-800 hover:text-orange-500"> Home</a>
             <a href="#" class="text-gray-800 hover:text-orange-500">Message</a>
             <a href="#" class="text-gray-800 hover:text-orange-500">Notification</a>
             <a href="#" class="text-gray-800 hover:text-orange-500">Settings</a>
