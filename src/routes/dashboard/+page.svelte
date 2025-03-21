@@ -62,7 +62,9 @@
     </div>
     <div class="flex items-center space-x-1">
         <img src={Nigeria} alt="Profile" class="size-[3.7rem] rounded-full" />
-        <img src={Profile} alt="Profile" class="w-8 h-8 rounded-full -mt-1" />
+        <a href="/dashboard/profile">
+            <img src={Profile} alt="Profile" class="w-8 h-8 rounded-full -mt-1" />
+        </a>
     </div>
 </header>
 
@@ -94,7 +96,9 @@
               />
               <div class="flex flex-row items-center space-x-2">
                   <img src={Nigeria} alt="Country" class="hidden md:block w-12 md:size-24" />
+                  <a href="/dashboard/profile">
                   <img src={Profile} alt="Profile" class="hidden md:block w-8 md:size-[3.2rem] -mt-2 md:-mt-3" />
+                </a>
               </div>
           </div>
       </div>

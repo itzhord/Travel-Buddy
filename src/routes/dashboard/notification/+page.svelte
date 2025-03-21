@@ -1,7 +1,7 @@
 <script lang="ts">
     import type { PageData } from './$types';
     import Avatar from '$lib/components/assets/Avatar.svg'
-
+    import Mobilenav from '$lib/components/block/Mobilenav.svelte';
 
     let notifications = [
     {
@@ -42,16 +42,16 @@
     let { data }: { data: PageData } = $props();
 </script>
 
-<div class="min-h-screen bg-gray-100 flex w-full items-center justify-center p-4">
+<div class="min-h-screen bg-gray-100  w-full items-center justify-center p-4">
     
-    
+    <Mobilenav />
     
     <div class="bg-gray-100 rounded-lg  md:w-[80vw] w-full mx-auto">
          <!-- Push Notification Toggle (Desktop Only) -->
-      <div class="p-4 md:p-5 border-b bg-white md:flex -mt-[10rem] mb-[5rem] md:flex-row items-center justify-between border-gray-200 hidden md:block rounded-3xl">
+      <div class="p-4 md:p-5 border-b bg-white md:flex mt-[2rem] mb-[5rem] md:flex-row items-center justify-between border-gray-200 hidden md:block rounded-3xl">
         <p class="text-sm text-gray-600">Turn on push notifications to know when the travellers want to connect with you</p>
-        <div class="mt-2 space-x-8">
-         <a href="#" class="py-2 px-4 border border-[#FA8443] text-[#FA8443]  rounded-3xl"> Allow push notifications</a>
+        <div class="mt-2 space-x-8 flex items-center">
+         <a href="#" class="py-2 px-4 text-sm lg:text-md border border-[#FA8443] text-[#FA8443]  rounded-3xl"> Allow push notifications</a>
          <a href="#" class="text-[#FA8443]">Dismiss</a>
         </div>
       </div>
