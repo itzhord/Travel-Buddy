@@ -22,12 +22,12 @@
      },
      {
       title: "Notification",
-      url: "#",
+      url: "dashboard/notification",
       icon: Calendar,
      },
      {
       title: "Setting",
-      url: "#",
+      url: "dashboard/settings",
       icon: Search,
      },
     ];
