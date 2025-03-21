@@ -12,6 +12,8 @@
     <main class="bg-gray-100">
       <Sidebar.Trigger class='hidden md:block' />
     </main>
+
+    
 {@render children()}
 
 </Sidebar.Provider>

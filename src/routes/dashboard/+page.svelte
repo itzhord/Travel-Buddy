@@ -80,7 +80,7 @@
   <!-- Main Content -->
   <main class="p-3 md:p-6 w-full md:w-[75vw] md:mx-auto">
       <!-- Welcome Section -->
-      <div class="p-3 md:p-4 flex flex-col md:flex-row md:space-x-[10rem] space-y-4 md:space-y-0 mb-6 rounded-lg">
+      <div class="p-3 md:p-4 flex flex-col md:flex-row lg:space-x-[10rem] space-y-4 md:space-y-0 mb-6 rounded-lg">
           <h2 class="hidden md:block text-2xl md:text-4xl font-bold text-gray-700">
               Hello Patrick!
               <span class="hidden md:block text-xs md:text-sm font-normal text-gray-500">Welcome back and explore new trips</span>
@@ -90,7 +90,7 @@
               <input
                   type="text"
                   placeholder="Stanford University"
-                  class="w-full md:lg:w-[45rem] h-10 md:h-[3.8rem] px-4 md:px-[3rem] border rounded-full focus:outline-none"
+                  class="w-full lg:w-[45rem] h-10 lg:h-[3.8rem] px-4 md:px-[3rem] border rounded-full focus:outline-none"
               />
               <div class="flex flex-row items-center space-x-2">
                   <img src={Nigeria} alt="Country" class="hidden md:block w-12 md:size-24" />
@@ -100,13 +100,13 @@
       </div>
 
       <!-- People Going to Stanford and Places in Stanford Map (Mobile: Stacked, Desktop: Side-by-Side) -->
-      <div class="flex flex-col md:flex-row md:space-x-[2vw] space-y-6 md:space-y-0 mb-6">
+      <div class="flex flex-col lg:flex-row lg:space-x-[2vw] space-y-6 lg:space-y-0 mb-6">
           <!-- People Going to Stanford -->
-          <div class="bg-white w-full md:w-[35vw] h-auto md:h-[50vh] p-3 md:p-4 rounded-lg shadow-md">
+          <div class="bg-white w-full lg:w-[35vw] h-auto lg:h-[50vh] p-3 md:p-4 rounded-lg shadow-md">
               <h3 class="text-base md:text-xl font-semibold text-gray-800 mb-3 md:mb-4 ml-0 md:ml-4">People Going to Stanford</h3>
               <div class="space-y-3 -mt-2 md:-mt-5 p-2 md:p-3">
                   {#each people as person}
-                      <div class="flex flex-col md:flex-row items-center justify-between bg-white shadow-lg rounded-xl py-3 md:py-5 space-y-3 md:space-y-0">
+                      <div class="flex flex-col lg:flex-row items-center justify-between bg-white shadow-lg rounded-xl py-3 md:py-5 space-y-3 md:space-y-0">
                           <div class="flex items-center space-x-3 md:space-x-4">
                               <img src={person.image} alt={person.name} class="w-8 h-8 md:w-10 md:h-10 rounded-full ml-0 md:ml-4" />
                               <div class="ml-0 md:ml-2">
@@ -117,16 +117,16 @@
                           <button class="bg-orange-500 text-white px-3 py-1 md:px-4 md:py-2 rounded-full hover:bg-orange-600 w- md:w-auto mr-0 md:mr-4">Connect</button>
                       </div>
                   {/each}
-                  <div class="relative -bottom-2 md:bottom-9 bg-white shadow-lg rounded-xl text-center p-2 md:p-3">
-                      <a href="#" class="text-orange-500 text-sm md:mt-4 inline-block">See all</a>
+                  <div class="relative -bottom-2 lg:bottom-9 bg-white shadow-lg rounded-xl text-center p-2 lg:p-3">
+                      <a href="#" class="text-orange-500 text-sm lg:mt-4 inline-block">See all</a>
                   </div>
               </div>
           </div>
 
           <!-- Places in Stanford Map -->
-          <div class="bg-white w-full md:w-[32vw] h-auto md:h-[50vh] p-3 md:p-4 rounded-lg shadow-md">
-              <h3 class="text-base md:text-lg font-semibold text-gray-800 mb-3 md:mb-4">Places in Stanford</h3>
-              <div class="w-full h-48 md:h-[42vh] bg-gray-200 rounded-lg flex items-center justify-center">
+          <div class="bg-white w-full lg:w-[32vw] h-auto lg:h-[50vh] p-3 lg:p-4 rounded-lg shadow-md">
+              <h3 class="text-base lg:text-lg font-semibold text-gray-800 mb-3 lg:mb-4">Places in Stanford</h3>
+              <div class="w-full h-48 lg:h-[42vh] bg-gray-200 rounded-lg flex items-center justify-center">
                   <p class="text-gray-600">Map Placeholder</p>
               </div>
           </div>
@@ -135,16 +135,16 @@
       <!-- Popular Destinations and Guide Article (Mobile: Stacked, Desktop: Side-by-Side) -->
       <div class="flex flex-col md:flex-row md:gap-6 space-y-6 md:space-y-0">
           <!-- Popular Destinations -->
-          <div class="bg-white w-full md:w-[35vw] p-3 md:p-4 rounded-lg shadow-md">
-              <h3 class="text-base md:text-2xl font-semibold text-gray-800 mb-3 md:mb-4 ml-0 md:ml-4">Popular Destinations</h3>
-              <div class="space-y-4 md:flex md:flex-row md:space-x-3 md:space-y-0">
+          <div class="bg-white w-full lg:w-[35vw] p-3 lg:p-4 rounded-lg shadow-md">
+              <h3 class="text-base lg:text-2xl font-semibold text-gray-800 mb-3 lg:mb-4 ml-0 lg:ml-4">Popular Destinations</h3>
+              <div class="space-y-4 lg:flex lg:flex-row lg:space-x-3 md:space-y-0">
                   {#each destinations as dest}
-                      <div class="flex flex-col bg-white rounded-lg shadow-lg space-y-2 md:space-y-0 p-2 md:p-3">
+                      <div class="flex flex-col bg-white rounded-lg shadow-lg space-y-2 md:space-y-0 p-2 lg:p-3">
                           <img src={dest.image} alt={dest.title} class="w-full md:w-[18rem] rounded-lg" />
                           <div>
-                              <h4 class="text-sm md:text-md font-medium mt-2">{dest.title}</h4>
-                              <p class="text-xs md:text-sm text-gray-600 mt-2">{dest.description}</p>
-                              <div class="flex items-center justify-between mt-3 md:mt-6 space-x-2">
+                              <h4 class="text-sm lg:text-md font-medium mt-2">{dest.title}</h4>
+                              <p class="text-xs lg:text-sm text-gray-600 mt-2">{dest.description}</p>
+                              <div class="flex items-center justify-between mt-3 lg:mt-6 space-x-2">
                                   <p class="text-gray-600 text-sm">
                                       <span class="text-yellow-500">★</span>{dest.price}
                                   </p>
@@ -159,7 +159,7 @@
           </div>
 
           <!-- Guide Article -->
-          <div class="w-full md:w-[33vw]">
+          <div class="w-full lg:w-[33vw]">
               <img src={Article} alt="Guide Article" class="w-full rounded-lg " />
           </div>
       </div>
