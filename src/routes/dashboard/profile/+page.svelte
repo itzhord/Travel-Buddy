@@ -95,7 +95,7 @@ let userInfo = [
         <img
           src={user.avatar}
           alt={user.name}
-          class="w-24 lg:w-50 rounded-full object-cover shadow-md"
+          class="w-24 md:w-32 lg:w-40 rounded-full object-cover shadow-md"
         />
         <!-- Name, Age, Match, Location -->
         <div class="ml-4 text-white drop-shadow-md">
@@ -145,9 +145,9 @@ let userInfo = [
           <h2 class="mb-3 text-lg font-normal">User Information</h2>
         <a href="#" class="text-orange-400 underline pr-5">More</a>
         </div>
-        <div class="flex flex-col lg:text-[1.2rem] -mt-7 p-8 space-y-1">
+        <div class="flex flex-col lg:text-[1.2rem] -mt-7 p-5 md:p-8 space-y-1">
           {#each userInfo as info}
-            <div class="flex items-center py-5 px-8 border border-gray-50 justify-between space-x-2 rounded-2xl shadow-md">
+            <div class="flex items-center py-5 px-8 border border-gray-50 justify-between space-x-5 rounded-2xl shadow-md">
               <span class="text-gray-600 text-[0.9rem]">{info.label}</span>
               <span class="text-[0.9rem] text-gray-400 py-1 px-2 lg:py-2 lg:px-10 border border-gray-300 rounded-3xl">{info.value}</span>
             </div>
