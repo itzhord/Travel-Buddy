@@ -11,6 +11,7 @@
   import Destination from '$lib/components/assets/destine.png';
   import Destination2 from '$lib/components/assets/destina.png';
   import Buddy from '$lib/components/assets/buddy logo.svg'
+  import Map from '$lib/components/block/Map.svelte'
 
   const people = [
       { name: 'Miracle Oyemoma', age: '25y', gender: 'Male', location: 'PH, Nigeria', image: PeopleImg },
@@ -131,7 +132,7 @@
           <div class="bg-white w-full lg:w-[32vw] h-auto lg:h-[50vh] p-3 lg:p-4 rounded-lg shadow-md">
               <h3 class="text-base lg:text-lg font-semibold text-gray-800 mb-3 lg:mb-4">Places in Stanford</h3>
               <div class="w-full h-48 lg:h-[42vh] bg-gray-200 rounded-lg flex items-center justify-center">
-                  <p class="text-gray-600">Map Placeholder</p>
+                  <Map />
               </div>
           </div>
       </div>
