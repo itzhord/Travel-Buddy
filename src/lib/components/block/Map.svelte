@@ -33,8 +33,5 @@
   </script>
   
   <div class=" w-full lg:h-[42vh]">
-    <a href="https://www.maptiler.com" class="absolute left-10 bottom-10 z-50">
-      <img src="https://api.maptiler.com/resources/logo.svg" alt="MapTiler logo"/>
-    </a>
     <div class="absolute w-full h-full" bind:this={mapContainer}></div>
   </div>

@@ -52,6 +52,7 @@
 		"vitest": "^3.0.0"
 	},
 	"dependencies": {
+		"@types/node": "^22.13.13",
 		"lucide-svelte": "^0.483.0",
 		"maplibre-gl": "^5.2.0"
 	}
