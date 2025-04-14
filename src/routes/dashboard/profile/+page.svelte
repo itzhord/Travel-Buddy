@@ -63,6 +63,10 @@ let userInfo = [
   let { data }: { data: PageData } = $props();
 </script>
 
+<svelte:head>
+  <title>Profile</title>
+</svelte:head>
+
 <div class=' w-[100vw] bg-gray-100'>
   <Mobilenav />
 <div class="mx-auto lg:w-[77vw] bg-gray-100  p-4">

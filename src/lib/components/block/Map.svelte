@@ -10,7 +10,7 @@
     const apiKey = 'WjiCl6N1HnjM5cAW3g5K';
     
     onMount(() => {
-      const initialState = { lng: 139.753, lat: 35.6844, zoom: 14 };
+      const initialState = { lng:  3.3792, lat: 6.5244, zoom: 14 };
       map = new Map({
         container: mapContainer,
         style: `https://api.maptiler.com/maps/streets-v2/style.json?key=${apiKey}`,

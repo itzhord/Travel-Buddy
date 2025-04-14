@@ -19,6 +19,11 @@
 
     let { data }: { data: PageData } = $props();
 </script>
+
+<svelte:head>
+  <title>Sign Up / Login</title>
+  <meta name="description" content="Sign up or Login page" />
+</svelte:head>
   
   <div class="min-h-screen flex flex-col bg-cover bg-center bg-no-repeat" style="background-image: url({Backdrop});">
     <!-- Header -->
@@ -61,9 +66,12 @@
           <button class="flex-1 py-2 text-center bg-orange-400 text-white">Sign Up</button>
           <a href="/personalization" class="flex-1 py-2 text-center text-gray-600 bg-gray-200">Log In</a>
         </div>
-  
-        <!-- Social Sign-Up Buttons -->
-        <div class="mt-4 space-y-3">
+        
+
+        <!-- Sign-Up Section -->
+       <div>
+         <!-- Social Sign-Up Buttons -->
+         <div class="mt-4 space-y-3">
           <button class="w-full flex items-center justify-center py-2 border rounded-lg hover:bg-gray-100">
             <img src={Facebook} alt="Facebook" class="w-5 h-5 mr-2" />
             Sign Up with Facebook
@@ -108,6 +116,53 @@
         <p class="mt-4 text-center text-sm text-gray-600">
           Already have an account on Travel Buddy? <a href="/login" class="text-orange-400 hover:underline">Log In</a>
         </p>
+       </div>
+
+
+        <!-- Login Section -->
+        <div>
+          <!-- Social Sign-Up Buttons -->
+          <div class="mt-4 space-y-3">
+           <button class="w-full flex items-center justify-center py-2 border rounded-lg hover:bg-gray-100">
+             <img src={Facebook} alt="Facebook" class="w-5 h-5 mr-2" />
+             Login with Facebook
+           </button>
+           <button class="w-full flex items-center justify-center py-2 border rounded-lg hover:bg-gray-100">
+             <img src={Google} alt="Google" class="w-5 h-5 mr-2" />
+             Login with Google
+           </button>
+         </div>
+   
+         <!-- Divider -->
+         <div class="my-4 text-center text-gray-500">OR</div>
+   
+         <!-- Manual Sign-Up Form -->
+         <form on:submit|preventDefault={handleSignUp} class="space-y-4 ">
+           <div class="flex space-x-4">
+             <input
+               type="email"
+               placeholder="Enter your email"
+               bind:value={firstName}
+               class="w-full p-2 border rounded-lg focus:outline-none"
+             />
+           
+           </div>
+           <input
+             type="Password"
+             placeholder="Enter Password"
+             bind:value={email}
+             class="w-full p-2 border rounded-lg focus:outline-none"
+           />
+           <button type="submit" class="w-full py-2 bg-orange-200 text-white rounded-lg hover:bg-orange-300">
+             Continue
+           </button>
+         </form>
+   
+         <!-- Log In Link -->
+         <p class="mt-4 text-center text-sm text-gray-600">
+           Don't have an account with Travel Buddy? <a href="/signUp" class="text-orange-400 hover:underline">Log In</a>
+         </p>
+        </div>
       </div>
     </main>
   </div>

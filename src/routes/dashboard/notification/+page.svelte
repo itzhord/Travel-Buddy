@@ -42,6 +42,10 @@
     let { data }: { data: PageData } = $props();
 </script>
 
+<svelte:head>
+  <title>Notification</title>
+</svelte:head>
+
 <div class="min-h-screen bg-gray-100  w-full items-center justify-center p-4">
     
     <Mobilenav />

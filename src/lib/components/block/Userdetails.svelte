@@ -18,17 +18,17 @@
 
 
 <Tabs.Root value="account" class="">
-    <Tabs.List class=" mt-[3rem] mx-[1.7rem]">
+    <Tabs.List class=" mt-[2rem] mx-[1.7rem]">
       <Tabs.Trigger value="sign">Sign Up</Tabs.Trigger>
       <Tabs.Trigger value="login">Login</Tabs.Trigger>
     </Tabs.List>
     <Tabs.Content value="sign">
         <main class="flex-grow flex items-center justify-center  p-4">
             <!-- Sign-Up Form -->
-            <div class="bg-white p-6 rounded-lg w-full max-w-md md:max-w-md">
+            <div class="bg-white p-6 rounded-lg w-full -mt-6 max-w-md md:max-w-md">
         
               <!-- Social Sign-Up Buttons -->
-              <div class="space-y-5">
+              <div class="space-y-4">
                 <button class="w-full flex items-center justify-center py-2 border rounded-lg hover:bg-gray-100">
                   <img src={Facebook} alt="Facebook" class="w-5 h-5 mr-2" />
                   Sign Up with Facebook
@@ -40,7 +40,7 @@
               </div>
         
               <!-- Divider -->
-              <div class="my-4 text-center text-gray-500">OR</div>
+              <div class="my-2 text-center text-gray-500">OR</div>
         
               <!-- Manual Sign-Up Form -->
               <form on:submit|preventDefault={handleSignUp} class="space-y-4">

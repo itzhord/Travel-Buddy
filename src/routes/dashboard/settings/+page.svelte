@@ -6,6 +6,10 @@
     let { data }: { data: PageData } = $props();
 </script>
 
+<svelte:head>
+  <title>Settings</title>
+</svelte:head>
+
 <div class="min-h-screen bg-gray-100 w-full  items-center justify-center p-4">
     <Mobilenav />
     <div class="w-full  mx-auto rounded-lg p-4 md:mt-[5rem] flex flex-col  md:p-6">
