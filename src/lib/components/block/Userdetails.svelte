@@ -14,10 +14,10 @@
 </script>
 
  
-<div class="w-[25vw] bg-white shadow-lg mx-auto rounded ">
+<div class="w-[25vw]  bg-white shadow-lg mx-auto rounded ">
 
 
-<Tabs.Root value="account" class="">
+<Tabs.Root value="sign" class=" mt-">
     <Tabs.List class=" mt-[2rem] mx-[1.7rem]">
       <Tabs.Trigger value="sign">Sign Up</Tabs.Trigger>
       <Tabs.Trigger value="login">Login</Tabs.Trigger>
